@@ -1,8 +1,8 @@
 ﻿@{
-    ViewData["Title"] = "Deal Or Ne Deal";
+    ViewData["Title"] = "Case or No Case";
 }
 
-<H1>Olivia's Deal or no Deal</H1>
+<H1>Olivia's Case or No Case</H1>
 
 
 <div class="row">
@@ -40,9 +40,9 @@
                 <h2 class="primary" data-bind="text: $root.bankersOffer()"></h2>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary pull-left" data-bind="click: $root.makeDeal">Deal</button>
+                <button type="button" class="btn btn-primary pull-left" data-bind="click: $root.makeDeal">Take the case</button>
 
-                <button type="button" class="btn btn-primary" data-bind="click: $root.noDeal">No Deal</button>
+                <button type="button" class="btn btn-primary" data-bind="click: $root.noDeal">Don't take the case</button>
             </div>
         </div>
     </div>

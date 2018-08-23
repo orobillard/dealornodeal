@@ -57,7 +57,7 @@ function Case(number, prize) {
 }
 
 // Overall viewmodel for this screen, along with initial state
-function DealOrNoDealGame() {
+function CaseOrNoCaseGame() {
     var self = this;
 
     // Non-editable catalog data - would come from the server
@@ -184,5 +184,5 @@ function DealOrNoDealGame() {
     self.createCases();
 }
 
-ko.applyBindings(new DealOrNoDealGame());
+ko.applyBindings(new CaseOrNoCaseGame());
 }();
