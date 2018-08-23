@@ -1,0 +1,9 @@
+C:\Users\orion\Documents\Code Projects\DealOrNoDeal\bin\Debug\netcoreapp1.1\DealOrNoDeal.deps.json
+C:\Users\orion\Documents\Code Projects\DealOrNoDeal\bin\Debug\netcoreapp1.1\DealOrNoDeal.runtimeconfig.json
+C:\Users\orion\Documents\Code Projects\DealOrNoDeal\bin\Debug\netcoreapp1.1\DealOrNoDeal.runtimeconfig.dev.json
+C:\Users\orion\Documents\Code Projects\DealOrNoDeal\bin\Debug\netcoreapp1.1\DealOrNoDeal.dll
+C:\Users\orion\Documents\Code Projects\DealOrNoDeal\bin\Debug\netcoreapp1.1\DealOrNoDeal.pdb
+C:\Users\orion\Documents\Code Projects\DealOrNoDeal\obj\Debug\netcoreapp1.1\DealOrNoDeal.csprojResolveAssemblyReference.cache
+C:\Users\orion\Documents\Code Projects\DealOrNoDeal\obj\Debug\netcoreapp1.1\DealOrNoDeal.AssemblyInfo.cs
+C:\Users\orion\Documents\Code Projects\DealOrNoDeal\obj\Debug\netcoreapp1.1\DealOrNoDeal.dll
+C:\Users\orion\Documents\Code Projects\DealOrNoDeal\obj\Debug\netcoreapp1.1\DealOrNoDeal.pdb

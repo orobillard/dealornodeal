@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Deal Or Ne Deal";
+}
+
+<H1>Olivia's Deal or no Deal</H1>
+
+
+<div class="row">
+    <div class="col-xs-10" data-bind="visible: cases()">
+        <h3 data-bind="visible: !$root.personalCase()">Choose a Personal Case</h3>
+        <h3 data-bind="visible: !$root.bankersOffer() && $root.personalCase()">Pick <span data-bind="text: turnsToOffer"></span> more cases</h3>
+
+        <div data-bind="foreach: cases">
+            <div data-bind="click: $root.caseClicked, css: { case: true,
+                'case-personal': personalCase,
+                'case-closed': !prize().picked(),
+                'case-open': prize().picked() }">
+                <h1 data-bind="text: number, visible: !prize().picked()"></h1>
+                <h1 data-bind="with: prize">
+                    <span data-bind="text: money, visible: picked"></span>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-2">
+        <h1>Prize Amounts:</h1>
+        <div data-bind="foreach:prizes">
+            <div data-bind="text: money, css: { 'prize-opened': picked()} " class="prize"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-id" data-keyboard="false" data-backdrop="static" data-bind="modal: bankersOffer">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">The banker is willing to offer you</h4>
+            </div>
+            <div class="modal-body">
+                <h2 class="primary" data-bind="text: $root.bankersOffer()"></h2>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary pull-left" data-bind="click: $root.makeDeal">Deal</button>
+
+                <button type="button" class="btn btn-primary" data-bind="click: $root.noDeal">No Deal</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-id" data-keyboard="false" data-backdrop="static" data-bind="modal: winningAmount">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Game Over</h4>
+            </div>
+            <div class="modal-body">
+                <h1>You took home: <span data-bind="text: $root.winningAmount()"></span></h1>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bind="click:$root.resetGame">Play Again?</button>
+            </div>
+        </div>
+    </div>
+</div>
+
